@@ -1,0 +1,4 @@
+# Archivo .gitignore para ignorar archivos de configuración local
+
+# Ignorar todos los archivos de entorno
+.venv
