@@ -4,6 +4,7 @@ from .serializer import Euler_NMSerializer
 from rest_framework.decorators import action
 from rest_framework.response import Response
 
+
 class Euler_NMView(viewsets.ModelViewSet):
     ''' Esta clase de vista simplifica las operaciones CRUD. '''
 
@@ -19,3 +20,12 @@ class Euler_NMView(viewsets.ModelViewSet):
 
         serializer = self.get_serializer(euler_instance)
         return Response(serializer.data)
+
+    @action(detail=True, methods=['get'])
+    def display_data(self, request, pk=None):
+        euler_instance = self.get_object()
+
+        data = euler_instance.get_data()
+        # serializer = self.get_serializer(euler_instance)
+
+        return Response({'data': data})
