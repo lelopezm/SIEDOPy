@@ -2,3 +2,6 @@
 
 # Ignorar todos los archivos de entorno
 .venv
+
+# Ignorar todos los archivos de configuración local
+__pycache__/

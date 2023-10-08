@@ -1,9 +1,21 @@
 from rest_framework import viewsets
-from .models import Euler_nm
-from .serializer import EulerNMSerializer
+from .models import Euler_NM
+from .serializer import Euler_NMSerializer
+from rest_framework.decorators import action
+from rest_framework.response import Response
 
-class EulerNMView(viewsets.ModelViewSet):
-    ''' Class View is used to define easily CRUD operations. '''
+class Euler_NMView(viewsets.ModelViewSet):
+    ''' Esta clase de vista simplifica las operaciones CRUD. '''
 
-    queryset = Euler_nm.objects.all()
-    serializer_class = EulerNMSerializer
+    queryset = Euler_NM.objects.all()
+    serializer_class = Euler_NMSerializer
+
+    @action(detail=True, methods=['post'])
+    def double_result(self, request, pk=None):
+        euler_instance = self.get_object()
+
+        euler_instance.doblar()
+        euler_instance.generate_graph()
+
+        serializer = self.get_serializer(euler_instance)
+        return Response(serializer.data)

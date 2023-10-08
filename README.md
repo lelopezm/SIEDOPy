@@ -11,7 +11,7 @@ python -m venv .venv
 
 Luego, para activar el entorno virtual, se debe ejecutar el siguiente comando:
 ```bash
-source .venv/bin/activate
+source .venv/Scripts/activate
 ```
 
 ### Dependencias :package:

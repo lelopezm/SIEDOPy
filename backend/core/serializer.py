@@ -1,11 +1,10 @@
 from rest_framework import serializers
-from .models import Euler_nm
+from .models import Euler_NM
 
 
-class EulerNMSerializer(serializers.ModelSerializer):
-    ''' Class Serializer is used to easily define CRUD operations. '''
+class Euler_NMSerializer(serializers.ModelSerializer):
+    ''' Esta clase de serializador simplifica las operaciones CRUD. '''
 
     class Meta:
-        model = Euler_nm
+        model = Euler_NM
         fields = '__all__'
-
