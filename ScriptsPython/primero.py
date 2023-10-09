@@ -1,6 +1,7 @@
 # The code is importing two libraries: PySimpleGUI and matplotlib.pyplot.
 import PySimpleGUI as sg
 import matplotlib.pyplot as plt
+import math 
 
 def x_prime(x, a):
     """
@@ -32,10 +33,13 @@ def euler(x0, a, Tf, N):
     h = (Tf - 0) / N
     t = [0]
     x = [x0]
+    er = [0]
     for i in range(N):
         x.append(x[-1] + h * x_prime(x[-1], a))
         t.append(t[-1] + h)
-    return t, x
+        #er.append(abs(a(x[i]- (x[0]*math.e**(a*t[i])))))
+        
+    return t, x, er
 
 # Define the layout of the GUI
 # The `layout` variable is defining the structure and components of the graphical user
@@ -65,7 +69,8 @@ while True:
         x0 = float(values["-X0-"])
         Tf = float(values["-TF-"])
         N = int(values["-N-"])
-        t, x = euler(x0, a, Tf, N)
+        t, x, er = euler(x0, a, Tf, N)
+        
         plt.plot(t, x)
         plt.xlabel("t")
         plt.ylabel("x")
@@ -73,4 +78,5 @@ while True:
         plt.show()
 
 # Close the window
+
 window.close()
