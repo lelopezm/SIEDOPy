@@ -12,10 +12,9 @@ class Euler_NMView(viewsets.ModelViewSet):
     serializer_class = Euler_NMSerializer
 
     @action(detail=True, methods=['post'])
-    def double_result(self, request, pk=None):
+    def graph(self, request, pk=None):
         euler_instance = self.get_object()
 
-        euler_instance.doblar()
         euler_instance.generate_graph()
 
         serializer = self.get_serializer(euler_instance)
