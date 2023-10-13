@@ -1,0 +1,9 @@
+# Requirements file installation
+matplotlib
+numpy
+sympy
+django
+djangorestframework
+django-cors-headers
+coreapi
+pytest

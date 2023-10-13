@@ -1,13 +1,14 @@
 # The code is importing two libraries: PySimpleGUI and matplotlib.pyplot.
 import PySimpleGUI as sg
 import matplotlib.pyplot as plt
-import math 
+import math as Math
+
 
 def x_prime(x, a):
     """
     The function `x_prime` takes two parameters `x` and `a` and returns the product of `x` and
     `a`.
-    
+
     :param x: The parameter x is a number that will be multiplied by the value of a
     :param a: The parameter "a" is a constant value that will be multiplied by the input value
     "x"
@@ -15,11 +16,20 @@ def x_prime(x, a):
     """
     return a * x
 
+
+def lessgrafic(x, er):
+    les = []
+    for i in range(len(x)):
+        les.append(x[i] - er[i]) #DEBE GRAFICAR SOLO er
+
+    return les
+
+
 def euler(x0, a, Tf, N):
     """
     The function `euler` implements the Euler method to approximate the solution of a
     first-order ordinary differential equation.
-    
+
     :param x0: The initial value of x at t=0
     :param a: The parameter "a" is not defined in the given code. It seems to be a missing
     piece of information. Could you please provide more details about what "a" represents in
@@ -37,9 +47,10 @@ def euler(x0, a, Tf, N):
     for i in range(N):
         x.append(x[-1] + h * x_prime(x[-1], a))
         t.append(t[-1] + h)
-        #er.append(abs(a(x[i]- (x[0]*math.e**(a*t[i])))))
-        
+        er.append(abs(x[-1] - x_prime(x0, Math.exp(a * t[-1]))))
+
     return t, x, er
+
 
 # Define the layout of the GUI
 # The `layout` variable is defining the structure and components of the graphical user
@@ -49,7 +60,8 @@ layout = [
     [sg.Text("Valor de a (Tasa de Crecimiento) :"), sg.Input(key="-A-")],
     [sg.Text("Valor de x0 (Valor Inicial) :"), sg.Input(key="-X0-")],
     [sg.Text("Valor de Tf (Tiempo Final) :"), sg.Input(key="-TF-")],
-    [sg.Text("Valor de N (Numero de intervalos de tiempo) :"), sg.Input(key="-N-")],
+    [sg.Text("Valor de N (Numero de intervalos de tiempo) :"),
+     sg.Input(key="-N-")],
     [sg.Button("Graficar"), sg.Button("Salir")]
 ]
 
@@ -70,13 +82,16 @@ while True:
         Tf = float(values["-TF-"])
         N = int(values["-N-"])
         t, x, er = euler(x0, a, Tf, N)
-        
-        plt.plot(t, x)
+        les = lessgrafic(x, er)
+        plt.plot(t, les, label="Diferencia error")
+        plt.plot(t, x, label="Euler")
+        # plt.plot(t, er, label="Error")
+        er.clear()
         plt.xlabel("t")
         plt.ylabel("x")
+        plt.legend()
         plt.title("Crecimiento exponencial")
         plt.show()
 
 # Close the window
-
 window.close()
