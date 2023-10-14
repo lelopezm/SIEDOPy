@@ -11,17 +11,21 @@ class Euler_NMView(viewsets.ModelViewSet):
     queryset = Euler_NM.objects.all()
     serializer_class = Euler_NMSerializer
 
-    @action(detail=True, methods=['post'])
+    @action(detail=True, methods=['get'])
+
+
+    @action(detail=True, methods=['get'])
     def graph(self, request, pk=None):
         euler_instance = self.get_object()
 
         euler_instance.generate_graph()
 
         serializer = self.get_serializer(euler_instance)
-        return Response(serializer.data)
+        # return Response(serializer.data)
+        return Response({'image_url': euler_instance.image_url})
 
     @action(detail=True, methods=['get'])
-    def display_data(self, request, pk=None):
+    def solve(self, request, pk=None):
         euler_instance = self.get_object()
 
         data = euler_instance.get_data()
