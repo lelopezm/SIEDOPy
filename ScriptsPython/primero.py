@@ -24,6 +24,16 @@ def lessgrafic(x, er):
 
     return les
 
+def Log_Er(er):
+    log = [0]
+    for i in range(1,len(er)):
+        val = Math.log10(er[i])
+        log.append(val)
+    print(log)
+    print(er)
+        
+    return log
+    
 
 def euler(x0, a, Tf, N):
     """
@@ -82,15 +92,25 @@ while True:
         Tf = float(values["-TF-"])
         N = int(values["-N-"])
         t, x, er = euler(x0, a, Tf, N)
-        les = lessgrafic(x, er)
-        plt.plot(t, les, label="Diferencia error")
-        plt.plot(t, x, label="Euler")
-        # plt.plot(t, er, label="Error")
-        er.clear()
-        plt.xlabel("t")
-        plt.ylabel("x")
-        plt.legend()
-        plt.title("Crecimiento exponencial")
+        les = lessgrafic(x, er)  
+        log_er = Log_Er(er)
+        
+        graf_Euler, graf_Error = plt.subplot(1, 2, 1), plt.subplot(1, 2, 2)
+        #set propiedades de la primera grafica
+        graf_Euler.set_title("Crecimiento exponencial")
+        graf_Euler.set_xlabel("t")
+        graf_Euler.set_ylabel("x")
+        graf_Euler.plot(t, x, label="Euler")
+        graf_Euler.plot(t, les, label="Solucion exacta")
+        graf_Euler.legend()
+        
+        #set propiedades de la segunda grafica
+        graf_Error.plot(t, log_er, label="Error")
+        graf_Error.set_title("Error")
+        graf_Error.set_xlabel("t")
+        graf_Error.set_ylabel("x")
+        graf_Error.legend()
+        
         plt.show()
 
 # Close the window
