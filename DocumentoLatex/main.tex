@@ -7,8 +7,8 @@
 \usepackage{dsfont}
 \usepackage{multicol}
 \usepackage{color, xcolor}
-%\usepackage[x11names,table]{xcolor}
 \usepackage{hyperref}
+\usepackage{float}
 \definecolor{amarilloclaro}{RGB}{238,243,144}
 \definecolor{azulclaro}{RGB}{210,243,243}
 %\pagestyle{empty} %Elimina la numeración de las páginas
@@ -17,6 +17,7 @@
 \renewcommand{\tablename}{Tabla}
 \renewcommand{\figurename}{Figura}
 \renewcommand{\refname}{Bibliografía}
+\renewcommand{\abstractname}{Resumen}
 %\spanishdecimal{.}
 %nuevos comandos
 \newcommand{\R}{\mathds{R}}
@@ -41,21 +42,14 @@
 \usetikzlibrary{intersections}
 %%
 \title{Métodos numéricos para resolver EDO}
-%\author[1]{Luis}
-%\author[2]{David}
-%\author[3]{Daniel}
-%\author[4]{Over}
-%\author[5]{Milton}
-%\author[6]{Jackeline}
+\author{Jackeline, Luis Eduardo, David, Daniel, Over and Milton}
 
-%\affil[1]{afiliaci\'on autor1}
-%\affil[2]{afiliaci\'on autor2}
-\date{Octubre 9 de 2023}
+\date{}
 
 \begin{document}
 \maketitle
 \begin{abstract}
- Resumen   
+ Aqui se escribe un resumen del trabajo  
 \end{abstract}
 
 \section{Ecuaciones diferenciales ordinarias}
@@ -66,9 +60,18 @@ Redactar teoría sobre métodos numéricos de EDO.  A continuación vamos a refe
 \begin{equation}\label{ecug}
     x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
 \end{equation}
-La ecuación \eqref{ecug}
-\section{Códigos de programación en Python}
+La ecuación \eqref{ecug} es la solución a la ecuación cuadrátrica $ax^2+bx+c=0$.
 
+\section{Códigos de programación en Python}
+Este es un ejemplo para incrustar una imagen, referenciada como fig01. En la Figura \ref{fig01} se muestra
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{images/elipse.pdf}
+    \caption{Esta es una elipse}
+    \label{fig01}
+\end{figure}
+
+Así se pone la bibliografia:
 \bibliographystyle{unsrt}
 \bibliography{referecias.bib}
 
