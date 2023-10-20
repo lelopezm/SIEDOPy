@@ -29,8 +29,8 @@ def Log_Er(er):
     for i in range(1,len(er)):
         val = Math.log10(er[i])
         log.append(val)
-    print(log)
-    print(er)
+    #print(log)
+    #print(er)
         
     return log
     
@@ -70,7 +70,7 @@ layout = [
     [sg.Text("Valor de a (Tasa de Crecimiento) :"), sg.Input(key="-A-")],
     [sg.Text("Valor de x0 (Valor Inicial) :"), sg.Input(key="-X0-")],
     [sg.Text("Valor de Tf (Tiempo Final) :"), sg.Input(key="-TF-")],
-    [sg.Text("Valor de N (Numero de intervalos de tiempo) :"),
+    [sg.Text("Valor de N (Numero de divisiones) :"),
      sg.Input(key="-N-")],
     [sg.Button("Graficar"), sg.Button("Salir")]
 ]
@@ -103,14 +103,15 @@ while True:
         graf_Euler.plot(t, x, label="Euler")
         graf_Euler.plot(t, les, label="Solucion exacta")
         graf_Euler.legend()
+        graf_Euler.grid()
         
         #set propiedades de la segunda grafica
         graf_Error.plot(t, log_er, label="Error")
         graf_Error.set_title("Error")
         graf_Error.set_xlabel("t")
-        graf_Error.set_ylabel("x")
+        graf_Error.set_ylabel("Log(E)")
         graf_Error.legend()
-        
+        graf_Error.grid()
         plt.show()
 
 # Close the window
