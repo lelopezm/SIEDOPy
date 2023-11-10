@@ -4,7 +4,7 @@ import numpy as np
 
 #tiempo final y número de iteraciones 
 tf=10
-n=500
+n=5
 #condiciones iniciales
 t0=0
 x0=2
