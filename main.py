@@ -4,6 +4,9 @@ import sys
 import tkinter as tk
 from tkinter import messagebox
 
+def salir_de_la_aplicacion():
+    root.destroy()
+
 def run_euler_interface():
     try:
         # Ruta al script que deseas ejecutar
@@ -25,9 +28,12 @@ root.title("Menú de Aplicación de Interfaces")
 # Configurar tamaño de la ventana
 root.geometry("300x200")
 
-# Crear un botón que al hacer clic ejecute la interfaz Euler
-euler_button = tk.Button(root, text="Euler", command=run_euler_interface)
-euler_button.pack(pady=20)
+# Crear un botón que al hacer clic ejecute la interfaz Solución Metodos Numericos
+interfaz_button = tk.Button(root, text="Solución Metodos Numericos", command=run_euler_interface)
+interfaz_button.pack(pady=20)
+# Crear un botón que al hacer clic salga de la interfaz 
+salir_button = tk.Button(root, text="Salir", command=salir_de_la_aplicacion)
+salir_button.pack(pady=20)
 
 # Iniciar el bucle principal de Tkinter
 root.mainloop()
