@@ -5,3 +5,5 @@
 
 # Ignorar todos los archivos de configuración local
 __pycache__/
+
+.vscode/
