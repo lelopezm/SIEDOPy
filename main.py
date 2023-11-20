@@ -2,6 +2,7 @@ import subprocess
 import os
 import sys
 import tkinter as tk
+import tkinter.ttk as ttk
 from tkinter import messagebox
 
 def salir_de_la_aplicacion():
@@ -25,14 +26,16 @@ def run_euler_interface():
 root = tk.Tk()
 root.title("Menú de Aplicación de Interfaces")
 
+style = ttk.Style(root)
+style.configure('Button', font=('Helvetica', 12))
 # Configurar tamaño de la ventana
 root.geometry("300x200")
 
 # Crear un botón que al hacer clic ejecute la interfaz Solución Metodos Numericos
-interfaz_button = tk.Button(root, text="Solución Metodos Numericos", command=run_euler_interface)
+interfaz_button = ttk.Button(root, text="Solución Metodos Numericos", command=run_euler_interface)
 interfaz_button.pack(pady=20)
 # Crear un botón que al hacer clic salga de la interfaz 
-salir_button = tk.Button(root, text="Salir", command=salir_de_la_aplicacion)
+salir_button = ttk.Button(root, text="Salir", command=salir_de_la_aplicacion)
 salir_button.pack(pady=20)
 
 # Iniciar el bucle principal de Tkinter
