@@ -5,7 +5,14 @@ import tkinter as tk
 import tkinter.ttk as ttk
 from tkinter import messagebox
 
+# Lista para mantener un registro de los procesos abiertos
+processes = []
+
 def salir_de_la_aplicacion():
+    # Termina todos los procesos antes de salir
+    for process in processes:
+        process.terminate()  # Intenta terminar el proceso
+        process.wait()       # Espera a que el proceso se haya cerrado
     root.destroy()
     
 def run_first_interface():
@@ -15,8 +22,9 @@ def run_first_interface():
         
         # Verifica si el archivo existe antes de intentar ejecutarlo
         if os.path.isfile(script_path):
-            # Ejecuta el script
-            subprocess.run(['python', script_path], check=True)
+            # Ejecuta el script y guarda el proceso
+            process = subprocess.Popen(['python', script_path])
+            processes.append(process)  # Guarda la referencia al proceso
         else:
             messagebox.showerror("Error", "El archivo primero.py no se encontró.")
     except subprocess.CalledProcessError as e:
@@ -30,8 +38,9 @@ def run_euler_interface():
         
         # Verifica si el archivo existe antes de intentar ejecutarlo
         if os.path.isfile(script_path):
-            # Ejecuta el script
-            subprocess.run(['python', script_path], check=True)
+            # Ejecuta el script y guarda el proceso
+            process = subprocess.Popen(['python', script_path])
+            processes.append(process)  # Guarda la referencia al proceso
         else:
             messagebox.showerror("Error", "El archivo InterfazODE.py no se encontró.")
     except subprocess.CalledProcessError as e:
