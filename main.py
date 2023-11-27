@@ -60,6 +60,21 @@ def run_modelo_exponencial_interface():
     except subprocess.CalledProcessError as e:
         messagebox.showerror("Error", f"Hubo un error al ejecutar InterfazModeloExponencial.py: {e}")
 
+def run_modelo_newton_interface():
+    try:
+        # Ruta al script que deseas ejecutar
+        script_path = os.path.join(sys.path[0], 'ScriptsPython', 'CodigosPVI', 'InterfazModeloNewton.py')
+        
+        # Verifica si el archivo existe antes de intentar ejecutarlo
+        if os.path.isfile(script_path):
+            # Ejecuta el script y guarda el proceso
+            process = subprocess.Popen(['python', script_path])
+            processes.append(process)  # Guarda la referencia al proceso
+        else:
+            messagebox.showerror("Error", "El archivo InterfazModeloNewton.py no se encontró.")
+    except subprocess.CalledProcessError as e:
+        messagebox.showerror("Error", f"Hubo un error al ejecutar InterfazModeloNewton.py: {e}")
+
 # Configuración del estilo
 def set_style():
     style = ttk.Style()
@@ -86,7 +101,6 @@ button_frame.columnconfigure(1, weight=1)
 button_frame.columnconfigure(2, weight=1)
 
 # Crear y colocar los botones en el marco usando un grid layout
-# Agregar columnspan para que el botón se extienda a través de las tres columnas
 interfaz_button = ttk.Button(button_frame, text="Metodos Numericos", command=run_euler_interface)
 interfaz_button.grid(row=0, column=0, columnspan=3, sticky='ew', padx=10, pady=10)
 
@@ -96,11 +110,14 @@ first_interface_button.grid(row=1, column=0, columnspan=3, sticky='ew', padx=10,
 modelo_exponencial_button = ttk.Button(button_frame, text="Modelo Exponencial", command=run_modelo_exponencial_interface)
 modelo_exponencial_button.grid(row=2, column=0, columnspan=3, sticky='ew', padx=10, pady=10)
 
+modelo_newton_button = ttk.Button(button_frame, text="Modelo de Newton", command=run_modelo_newton_interface)
+modelo_newton_button.grid(row=3, column=0, columnspan=3, sticky='ew', padx=10, pady=10)
+
 salir_button = ttk.Button(button_frame, text="Salir", command=salir_de_la_aplicacion)
-salir_button.grid(row=3, column=0, columnspan=3, sticky='ew', padx=10, pady=10)
+salir_button.grid(row=4, column=0, columnspan=3, sticky='ew', padx=10, pady=10)
 
 # Añadir un poco de espacio al final del grid para mejor estética
-button_frame.grid_rowconfigure(4, weight=1)
+button_frame.grid_rowconfigure(5, weight=1)
 
 # Iniciar el bucle principal de Tkinter
 root.mainloop()
