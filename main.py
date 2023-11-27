@@ -89,7 +89,7 @@ root.title("SIEDOPY")
 set_style()
 
 # Configurar tamaño de la ventana
-root.geometry("400x300")  # Tamaño aumentado para dar más espacio
+root.geometry("400x350")  # Tamaño aumentado para dar más espacio
 
 # Marco para los botones
 button_frame = ttk.Frame(root, padding="10")
