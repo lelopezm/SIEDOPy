@@ -1,7 +1,7 @@
 PWD c:\Semillero de Investigación\SIEDOPy\DocumentoLatex
 INPUT C:\Users\LUIS\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Semillero de Investigación\SIEDOPy\DocumentoLatex\main.tex
-OUTPUT main.log
+INPUT c:\Semillero de Investigación\SIEDOPy\DocumentoLatex\main2.tex
+OUTPUT main2.log
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
@@ -921,10 +921,10 @@ INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\main.aux
-INPUT main.aux
-INPUT main.aux
-OUTPUT main.aux
+INPUT .\main2.aux
+INPUT main2.aux
+INPUT main2.aux
+OUTPUT main2.aux
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -944,18 +944,18 @@ INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT .\main.out
-INPUT main.out
-INPUT .\main.out
-INPUT main.out
-INPUT .\main.out
-INPUT main.out
-INPUT .\main.out
-INPUT main.out
-OUTPUT main.pdf
-INPUT .\main.out
-INPUT .\main.out
-OUTPUT main.out
+INPUT .\main2.out
+INPUT main2.out
+INPUT .\main2.out
+INPUT main2.out
+INPUT .\main2.out
+INPUT main2.out
+INPUT .\main2.out
+INPUT main2.out
+OUTPUT main2.pdf
+INPUT .\main2.out
+INPUT .\main2.out
+OUTPUT main2.out
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -987,8 +987,7 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -1010,28 +1009,22 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\latex-fonts\lasy10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\latex-fonts\lasy8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\latex-fonts\lasy6.tfm
 INPUT C:\Users\LUIS\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT C:\Users\LUIS\AppData\Roaming\MiKTeX\tex\latex\doublestroke\udsrom.fd
-INPUT C:\Users\LUIS\AppData\Roaming\MiKTeX\tex\latex\doublestroke\udsrom.fd
-INPUT C:\Users\LUIS\AppData\Roaming\MiKTeX\tex\latex\doublestroke\udsrom.fd
-INPUT C:\Users\LUIS\AppData\Roaming\MiKTeX\tex\latex\doublestroke\udsrom.fd
-INPUT C:\Users\LUIS\AppData\Roaming\MiKTeX\fonts\tfm\public\doublestroke\dsrom12.tfm
-INPUT C:\Users\LUIS\AppData\Roaming\MiKTeX\fonts\tfm\public\doublestroke\dsrom8.tfm
-INPUT C:\Users\LUIS\AppData\Roaming\MiKTeX\fonts\tfm\public\doublestroke\dsrom8.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT .\images\GraficaEuler.pdf
-INPUT .\images\GraficaEuler.pdf
-INPUT images\GraficaEuler.pdf
-INPUT .\images\GraficaEuler.pdf
-INPUT .\images\GraficaEuler.pdf
-INPUT .\images\GraficaEuler.pdf
-INPUT .\main.bbl
-INPUT main.bbl
-INPUT .\main.bbl
-INPUT main.bbl
-INPUT main.aux
-INPUT .\main.out
-INPUT .\main.out
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmtt12.tfm
+INPUT .\images\elipse.pdf
+INPUT .\images\elipse.pdf
+INPUT images\elipse.pdf
+INPUT .\images\elipse.pdf
+INPUT .\images\elipse.pdf
+INPUT .\images\elipse.pdf
+INPUT .\main2.bbl
+INPUT main2.bbl
+INPUT .\main2.bbl
+INPUT main2.bbl
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
+INPUT main2.aux
+INPUT .\main2.out
+INPUT .\main2.out
 INPUT C:\Users\LUIS\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\LUIS\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
@@ -1042,6 +1035,8 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
@@ -1050,13 +1045,19 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
-INPUT C:\Users\LUIS\AppData\Roaming\MiKTeX\fonts\type1\public\doublestroke\dsrom12.pfb
-INPUT C:\Users\LUIS\AppData\Roaming\MiKTeX\fonts\type1\public\doublestroke\dsrom12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.11)  1 DEC 2023 15:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.11)  22 NOV 2023 17:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Semillero de Investigación/SIEDOPy/DocumentoLatex/main.tex"
-(c:/Semillero de Investigación/SIEDOPy/DocumentoLatex/main.tex
+**"c:/Semillero de Investigación/SIEDOPy/DocumentoLatex/main2.tex"
+(c:/Semillero de Investigación/SIEDOPy/DocumentoLatex/main2.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-02> (C:\Program Files\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -635,8 +635,8 @@ File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count327
 \l__pdf_internal_box=\box132
-) (main.aux)
-\openout1 = `main.aux'.
+) (main2.aux)
+\openout1 = `main2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
@@ -715,9 +715,9 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 57.
- (main.out) (main.out)
+ (main2.out) (main2.out)
 \@outlinefile=\write4
-\openout4 = `main.out'.
+\openout4 = `main2.out'.
 
 
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.8).
@@ -735,32 +735,28 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 59.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
-{C:/Users/LUIS/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 81.
- (C:\Users\LUIS\AppData\Roaming\MiKTeX\tex/latex/doublestroke\udsrom.fd
-File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [2]
-<images/GraficaEuler.pdf, id=76, 255.63269pt x 195.56664pt>
-File: images/GraficaEuler.pdf Graphic file (type pdf)
-<use images/GraficaEuler.pdf>
-Package pdftex.def Info: images/GraficaEuler.pdf  used on input line 127.
-(pdftex.def)             Requested size: 153.38078pt x 117.34088pt.
- [3 <./images/GraficaEuler.pdf>] [4] (main.bbl) [5] (main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 374E6C684441527323A9160E9D037FC2;1810.
+{C:/Users/LUIS/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3] [4] [5] [6] [7] [8]
+<images/elipse.pdf, id=79, 509.79506pt x 456.88324pt>
+File: images/elipse.pdf Graphic file (type pdf)
+<use images/elipse.pdf>
+Package pdftex.def Info: images/elipse.pdf  used on input line 451.
+(pdftex.def)             Requested size: 254.8969pt x 228.44106pt.
+ [9] (main2.bbl) [10 <./images/elipse.pdf>] (main2.aux)
+Package rerunfilecheck Info: File `main2.out' has not changed.
+(rerunfilecheck)             Checksum: DAFFC40BE4A44B56FC05958B847222A7;848.
  ) 
 Here is how much of TeX's memory you used:
- 34018 strings out of 476374
- 808530 string characters out of 5798672
- 1865340 words of memory out of 5000000
- 53825 multiletter control sequences out of 15000+600000
- 523266 words of font info for 79 fonts, out of 8000000 for 9000
+ 34016 strings out of 476374
+ 808328 string characters out of 5798672
+ 1859340 words of memory out of 5000000
+ 53822 multiletter control sequences out of 15000+600000
+ 522840 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,80p,780b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\LUIS\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/LUIS/AppData/Roaming/MiKTeX/fonts/type1/public/doublestroke/dsrom12.pfb>
-Output written on main.pdf (5 pages, 185153 bytes).
+ 84i,10n,80p,781b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\LUIS\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main2.pdf (10 pages, 274075 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 19 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 202 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 50 words of extra memory for PDF output out of 10000 (max. 10000000)
 
