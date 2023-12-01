@@ -16,7 +16,6 @@ def x_prime(x, a):
     """
     return a * x
 
-
 def lessgrafic(x, er):
     les = []
     for i in range(len(x)):
